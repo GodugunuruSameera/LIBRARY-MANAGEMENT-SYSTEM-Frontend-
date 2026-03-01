@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyLibrary | Contact Us</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>📚 MyLibrary</h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="issued.html">Issued Books</a>
+        <a href="about.html">About</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="#" id="logoutBtn" style="display:none;">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; align-items: flex-start; margin-top: 20px;">
+    
+    <div class="form-box" style="flex: 1; min-width: 300px; margin: 0;">
+      <h2 style="text-align:center; color: var(--primary); margin-bottom:15px;">Get in Touch</h2>
+      <p id="contactMsg" class="message"></p>
+      <form id="contactForm" onsubmit="handleContact(event)">
+        <input type="text" id="cname" placeholder="Your Name">
+        <input type="email" id="cemail" placeholder="Your Email Address">
+        <textarea id="cmsg" rows="5" placeholder="How can we help you?"></textarea>
+        <button type="submit" style="margin-top:10px;">Send Message</button>
+      </form>
+    </div>
+
+    <div style="flex: 1; min-width: 300px; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 4px solid var(--secondary);">
+      <h2 style="color: var(--primary); margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px;">Library Admins</h2>
+      <p style="margin-bottom: 20px; color: #555; font-size: 0.95rem;">Need immediate assistance? Reach out directly to our management team:</p>
+      
+      <ul style="list-style: none; line-height: 2.2; font-size: 1.05rem; color: var(--text);">
+        <li>📞 <strong>Sameera:</strong> +91 8309331261</li>
+        <li>📞 <strong>Siddu:</strong> +91 7862873681</li>
+        <li>📞 <strong>Sindhu:</strong> +91 6382834712</li>
+        <li>📞 <strong>Salma:</strong> +91 7325146251</li>
+        <li style="margin-top: 15px; color: var(--secondary); font-weight: bold;">📖 <strong>Library Hotline:</strong> +91 9763532323</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 MyLibrary Digital Management System.</p>
+    <p>Support: support@mylibrary.com | Hotline: +91 9763532323</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

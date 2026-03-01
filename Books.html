@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyLibrary | Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>📚 MyLibrary</h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="books.html" class="active">Books</a>
+        <a href="issued.html">Issued Books</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="#" id="logoutBtn" style="display:none;">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 style="color:var(--primary); margin-bottom:15px; text-align:center;">Library Catalog</h2>
+    
+    <div style="display:flex; gap:15px; margin-bottom:30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <input type="text" id="searchBox" placeholder="Search by title or author..." onkeyup="filterBooks()">
+      <select id="categoryFilter" onchange="filterBooks()" style="width: 300px;">
+        <option value="">All Categories</option>
+        <option value="Fiction">Fiction</option>
+        <option value="Science">Science</option>
+        <option value="History">History</option>
+        <option value="Self Help">Self Help</option>
+      </select>
+    </div>
+
+    <div class="card-grid" id="bookList"></div>
+  </div>
+
+  <footer><p>© 2026 MyLibrary.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/books.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyLibrary | My Books</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>📚 MyLibrary</h2>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="issued.html" class="active">Issued Books</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="#" id="logoutBtn" style="display:none;">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 style="color:var(--primary); text-align:center; margin-bottom:20px;">Books Issued to You</h2>
+    <div class="card-grid" id="issuedContainer"></div>
+  </div>
+
+  <footer><p>© 2026 MyLibrary.</p></footer>
+  <script src="js/data.js"></script>
+  <script src="js/issued.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

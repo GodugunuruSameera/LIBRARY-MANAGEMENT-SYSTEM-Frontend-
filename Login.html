@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyLibrary | Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar"><h2>📚 MyLibrary</h2><div class="nav-links"><a href="index.html">Home</a><a href="signup.html">Signup</a></div></div>
+  </header>
+
+  <div class="container" style="display:flex; justify-content:center; align-items:center;">
+    <div class="form-box" style="width:100%;">
+      <h2 style="text-align:center; color:var(--primary); margin-bottom:20px;">Member Login</h2>
+      <p id="msg" class="message"></p>
+      <form onsubmit="handleLogin(event)">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit" style="margin-top:20px;">Login</button>
+      </form>
+      <p style="text-align:center; margin-top:15px; font-size:0.9rem;">Not a member yet? <a href="signup.html" style="color:var(--secondary);">Register here</a></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

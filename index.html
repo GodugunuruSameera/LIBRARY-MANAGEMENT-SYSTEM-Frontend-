@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyLibrary | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h2>📚 MyLibrary</h2>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="books.html">Books</a>
+        <a href="issued.html">Issued Books</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" id="loginLink">Login/Signup</a>
+        <a href="#" id="logoutBtn" style="display:none;">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to MyLibrary</h1>
+      <p>Your digital gateway to thousands of books, resources, and knowledge.</p>
+      <button style="width:200px; background:var(--secondary);" onclick="window.location.href='books.html'">Browse Catalog</button>
+    </div>
+
+    <h2 style="text-align:center; color:var(--primary); margin-bottom:20px;">Library Highlights</h2>
+    <div style="display:flex; justify-content:space-around; text-align:center; flex-wrap:wrap; gap:20px;">
+      <div style="background:white; padding:20px; border-radius:8px; width:30%; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <h3 style="color:var(--secondary);">🌍 Access Anywhere</h3>
+        <p>Browse our catalog and issue books from the comfort of your home.</p>
+      </div>
+      <div style="background:white; padding:20px; border-radius:8px; width:30%; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <h3 style="color:var(--secondary);">📖 Vast Collection</h3>
+        <p>From fiction to complex sciences, find exactly what you need.</p>
+      </div>
+      <div style="background:white; padding:20px; border-radius:8px; width:30%; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
+        <h3 style="color:var(--secondary);">⚡ Easy Returns</h3>
+        <p>Digital tracking ensures you never miss a return date.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 MyLibrary Digital Management System.</p>
+    <p>Open: Mon–Sat | 9:00 AM – 6:00 PM</p>
+    <p>Support: support@mylibrary.com</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
